@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            padding-top: 60px;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .blog-post {
+            background-color: wheat;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment {
+            margin-top: 20px;
+        }
+
+        .comment-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comment-body {
+            margin-bottom: 10px;
+        }
+
+        .comment-form {
+            margin-top: 20px;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="mt-5">Latest Blog Posts</h2>
+                <div class="blog-post">
+                    <h3>Blog Post Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor vel massa
+                        sollicitudin, et lobortis lacus sagittis. Ut ut commodo lorem.</p>
+                    <div class="comment-form">
+                        <h4>Add a comment:</h4>
+                        <form>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" placeholder="Your comment"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- More blog posts can be added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, jQuery, and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
